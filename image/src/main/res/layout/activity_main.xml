@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시작함"
+            android:id="@+id/Switch1"
+            android:checked="true"
+            android:layout_below="@+id/Text1"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="좋아하는 안드로이드 버전은?"
+            android:id="@+id/Text2"
+            android:layout_below="@+id/Switch1"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="선택을 시작하겠습니까?"
+            android:id="@+id/Text1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical" />
+
+        <RadioGroup
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id = "@+id/Rgroup1"
+            android:visibility="invisible"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id = "@+id/Android1"
+                android:visibility="invisible"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="젤리빈(4.3)"
+                android:id="@+id/Jellybean"
+                android:layout_below="@+id/radioButton3"
+                android:layout_alignParentStart="true"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="킷켓(4.4)"
+                android:id="@+id/Kitkat"
+                android:layout_below="@+id/radiobutton2"
+                android:layout_alignParentStart="true"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="롤리팝(5.0)"
+                android:id="@+id/Lollipop"
+                android:layout_below="@+id/radioButton1"
+                android:layout_alignParentStart="true"
+                android:checked="false" />
+
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BtnFinsh"
+            android:text="종료"
+            android:visibility="visible"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BtnFirst"
+            android:text="처음으로"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</LinearLayout>
